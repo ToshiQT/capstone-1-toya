@@ -1,0 +1,303 @@
+/* CSS Capstone1 Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+  padding-top: 3rem;
+  font-smooth: always;
+  scroll-behavior: smooth;
+}
+
+/*start*/
+.navbar {
+  background-image: url(./images/14.jpg);
+  background-size: cover;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url(./images/18.jpg);
+  border-radius: 10px 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  animation: scale 0.2s ease-in-out !important;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Homee*/
+
+.kitkat {
+  padding-bottom: 5px;
+  color: #0EA293;
+  position: absolute;
+  top: 8rem;
+  left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.kitkat h1 {
+  background: -webkit-linear-gradient(#FFD93D, #FF8400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.kitkat p {
+    font-style: italic;
+}
+
+.wavef {
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .kitkat {
+    position: static;
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .wavef{
+    display: none;
+  }
+}
+
+
+
+/*sec ---------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*About Me*/
+.about {
+	background: repeating-linear-gradient(#98DFD6, #FFDD83);
+}
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul span {
+  margin-right: 10px;
+}
+
+.hubad {
+  font-weight: bold;
+}
+
+/*Skillrex*/
+.skills {
+	background: repeating-linear-gradient(#FFDD83, #98DFD6);
+	}
+
+.skl{
+	width: 150;
+}
+
+.galp {
+  padding: 3rem;
+  text-align: center;
+}
+
+
+/*Portfolio*/
+#portfolio {
+	background: repeating-linear-gradient(#98DFD6, #00235B);
+	}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+
+
+/*Concern-------------------*/
+.contact {
+	background: repeating-linear-gradient(#00235B, #E21818);
+	color: #fff;
+	}
+.kilo {
+	text-align: center;
+}
+.contact .form {
+  width: 100%;
+  background: #fff;
+  z-index: 33;
+}
+
+.contact .form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .form input,
+.contact .form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .form input {
+  height: 44px;
+}
+
+.contact .form textarea {
+  padding: 10px 12px;
+}
+
+.contact .form-con button[type=button] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .form-con button[type=button]:hover {
+  background: #0678e3;
+}
+
+
+/*paa----------------------*/
+#footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+#footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+  animation: scale 0.2s ease-in-out !important;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
